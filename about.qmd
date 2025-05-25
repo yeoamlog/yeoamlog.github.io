@@ -1,0 +1,19 @@
+---
+title: "Junhyuck Kwon"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: google
+      text: Gmail
+      href: mailto:jerrykbayes0814@gmail.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/junhyuck-kwon
+    - icon: github
+      text: Github
+      href: https://github.com/yeoamlog
+
+---
+
+About this blog

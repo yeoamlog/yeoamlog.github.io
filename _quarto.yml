@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "나날의 여암(與巖)"
+  navbar:
+    right:
+      - text: About
+        href: about.qmd
+      - text: Blog
+        href: index.qmd
+      - icon: github
+        href: https://github.com/yeoamlog
+      - icon: threads
+        href: https://threads.net/@yeoamlog
+  page-navigation: true
+  page-footer: 
+    left: "© 2025 여암 Blog"
+    right: "[GitHub](https://github.com/yeoamlog)"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+
+
+
