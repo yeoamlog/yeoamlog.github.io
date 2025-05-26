@@ -8,8 +8,6 @@ website:
     right:
       - text: About
         href: about.qmd
-      - text: Blog
-        href: index.qmd
       - icon: github
         href: https://github.com/yeoamlog
       - icon: threads
