@@ -129,28 +129,6 @@ body[data-page="about"] .navbar-nav .nav-link[href*="about"]::after {
   border-radius: 1px;
 }
 
-/* About 페이지 특별 스타일 - 푸터 문제 해결 */
-body[data-page="about"] {
-  padding-bottom: 80px; /* 푸터 공간 확보 */
-}
-
-body[data-page="about"] .about-contents {
-  margin-bottom: 60px; /* about 내용 하단 여백 */
-}
-
-body[data-page="about"] .about-links {
-  margin-bottom: 40px; /* 소셜 링크 하단 여백 */
-}
-
-/* About 페이지에서 푸터가 소셜 링크를 가리지 않도록 */
-body[data-page="about"] .dynamic-footer {
-  position: relative !important; /* 고정 위치 해제 */
-  margin-top: 60px; /* 충분한 상단 여백 */
-  transform: none !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
 /* 반응형 디자인 */
 @media (max-width: 768px) {
   .footer-content {
