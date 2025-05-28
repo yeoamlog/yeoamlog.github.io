@@ -7,15 +7,13 @@ website:
   navbar:
     right:
       - text: About
-        href: about.qmd
+        href: about.html
       - icon: github
         href: https://github.com/yeoamlog
       - icon: threads
         href: https://threads.net/@yeoamlog
+  search: false
   page-navigation: true
-  page-footer: 
-    left: "© 2025 여암 Blog"
-    right: "[GitHub](https://github.com/yeoamlog)"
 
 format:
   html:
@@ -23,6 +21,7 @@ format:
       - cosmo
       - brand
     css: styles.css
+    include-after-body: dynamic-footer.html
 
 
 

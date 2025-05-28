@@ -4,27 +4,27 @@
     "href": "about.html",
     "title": "Junhyuck Kwon",
     "section": "",
-    "text": "About this blog"
+    "text": "겉은 한옥인데, 속은 하이테크인 집을 꿈꾸고  타이핑으로 기록하지만, 종이로 읽기를 선호하고  심플하지만, 쫀득한 그런 문장들을 쫒으며  다양한 사고 프레임으로 현상을 분석하기 좋아하는 \n\n데이터 분석가입니다.\n Home"
   },
   {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "title": "여암 블로그에 오신 것을 환영합니다",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "여암 블로그에 오신 것을 환영합니다.\n이곳은 데이터 분석가의 일상과 생각을 기록하는 공간입니다.\n\n\n\n📊 데이터 분석 이야기\n💭 일상의 관찰과 사고\n📚 읽은 책과 배운 것들\n🏠 한옥과 하이테크의 조화\n\n천천히 채워나가겠습니다. 함께해 주세요!"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Hello World!",
+    "objectID": "posts/welcome/index.html#안녕하세요",
+    "href": "posts/welcome/index.html#안녕하세요",
+    "title": "여암 블로그에 오신 것을 환영합니다",
     "section": "",
-    "text": "이것은\nprint(\"Hello World!\")\n이다."
+    "text": "여암 블로그에 오신 것을 환영합니다.\n이곳은 데이터 분석가의 일상과 생각을 기록하는 공간입니다.\n\n\n\n📊 데이터 분석 이야기\n💭 일상의 관찰과 사고\n📚 읽은 책과 배운 것들\n🏠 한옥과 하이테크의 조화\n\n천천히 채워나가겠습니다. 함께해 주세요!"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "기록일지",
     "section": "",
-    "text": "Hello World!\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMay 15, 2025\n\n\n여암\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMay 12, 2025\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
+    "text": "포스트를 준비 중입니다…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n여암 블로그에 오신 것을 환영합니다\n\n\n\n소개\n\n블로그\n\n\n\n여암 블로그의 첫 번째 포스트입니다.\n\n\n\n\n\nJan 29, 2025\n\n\nJunhyuck Kwon\n\n\n\n\n\nNo matching items"
   }
 ]

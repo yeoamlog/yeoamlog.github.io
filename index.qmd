@@ -7,8 +7,11 @@ listing:
   categories: true
   sort-ui: false
   filter-ui: false
+  max-items: 50
 page-layout: full
 title-block-banner: true
 ---
+
+포스트를 준비 중입니다...
 
 

@@ -26,10 +26,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -40,18 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -82,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">나날의 여암(與巖)</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -116,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <div class="quarto-about-jolla">
-  <img src="profile.jpg" class="about-image
+  <img src="profile_anim.png" class="about-image
   round " style="height: 15em; width: 15em;">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -125,7 +108,11 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
   </div>
 </header><main class="content" id="quarto-document-content">
-<p>About this blog</p>
+<div style="text-align: left;">
+<p>겉은 한옥인데, 속은 하이테크인 집을 꿈꾸고 <br> 타이핑으로 기록하지만, 종이로 읽기를 선호하고 <br> 심플하지만, 쫀득한 그런 문장들을 쫒으며 <br> 다양한 사고 프레임으로 현상을 분석하기 좋아하는 <br></p>
+</div>
+<p><strong>데이터 분석가</strong>입니다.</p>
+<p><a href="index.html" class="fixed-home-btn"> Home</a></p>
 
 
 </main> 
@@ -146,6 +133,159 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
  <!-- /main -->
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>여암 블로그</title>
+  <style>
+    .dynamic-footer { position: fixed; bottom: 0; left: 0; right: 0; background: #f4f4f4; padding: 10px; transition: transform 0.3s; z-index: 999; }
+    .dynamic-footer.hide { transform: translateY(100%); }
+    .dynamic-footer.show { transform: translateY(0); }
+    .scroll-indicator { position: fixed; top: 0; left: 0; height: 4px; background: #333; z-index: 9999; transition: width 0.2s ease; }
+    .search-container { margin-top: 10px; display: flex; gap: 5px; }
+    .search-results { background: white; border: 1px solid #ccc; max-height: 200px; overflow-y: auto; display: none; position: absolute; width: 100%; z-index: 1000; }
+    .search-results.active { display: block; }
+    .search-result-item { padding: 10px; cursor: pointer; border-bottom: 1px solid #eee; }
+    .search-result-item:hover { background: #f0f0f0; }
+  </style>
+
+
+
+<header class="title-block-banner">
+  <h1>여암 블로그</h1>
+</header>
+
+<main>
+  <!-- Example content -->
+  <article><a href="post1.html">첫 번째 포스트</a></article>
+  <article><a href="post2.html">두 번째 포스트</a></article>
+</main>
+
+<script>
+(function () {
+  document.addEventListener("DOMContentLoaded", function () {
+    initializeFooter();
+    addSearchToTitleBlock();
+  });
+
+  function initializeFooter() {
+    const footer = document.createElement("div");
+    footer.className = "dynamic-footer hide";
+    footer.innerHTML = `
+      <div class="footer-content">
+        <div class="footer-left" style="margin-left: 30px;">
+          <span>© 2025 여암 Daily Logs</span>
+        </div>
+      </div>`;
+    document.body.appendChild(footer);
+
+    const scrollIndicator = document.createElement("div");
+    scrollIndicator.className = "scroll-indicator";
+    document.body.appendChild(scrollIndicator);
+
+    let lastScrollTop = 0;
+    let ticking = false;
+
+    function handleScroll() {
+      const scrollTop = window.pageYOffset;
+      const windowHeight = window.innerHeight;
+      const docHeight = Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight
+      );
+
+      const scrollPercent = (scrollTop / (docHeight - windowHeight)) * 100;
+      scrollIndicator.style.width = Math.min(scrollPercent, 100) + "%";
+
+      const isNearBottom = scrollTop + windowHeight >= docHeight * 0.8;
+      const scrollDirection = scrollTop > lastScrollTop ? "down" : "up";
+
+      if (Math.abs(scrollTop - lastScrollTop) > 5) {
+        if (scrollDirection === "down" && !isNearBottom) {
+          footer.classList.remove("show");
+          footer.classList.add("hide");
+        } else {
+          footer.classList.remove("hide");
+          footer.classList.add("show");
+        }
+      }
+
+      if (scrollTop <= 10) {
+        footer.classList.remove("show");
+        footer.classList.add("hide");
+      }
+
+      lastScrollTop = scrollTop;
+    }
+
+    function requestTick() {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
+
+    window.addEventListener("scroll", requestTick, { passive: true });
+  }
+
+  function addSearchToTitleBlock() {
+    const titleBlock = document.querySelector(".title-block-banner");
+    if (!titleBlock) return;
+
+    const container = document.createElement("div");
+    container.className = "search-container";
+    container.innerHTML = `
+      <input type="text" class="search-input" id="blog-search" placeholder="포스트 검색...">
+      <button id="search-btn" class="search-button">🔍</button>
+      <div id="search-results" class="search-results"></div>`;
+
+    titleBlock.appendChild(container);
+
+    const input = document.getElementById("blog-search");
+    const button = document.getElementById("search-btn");
+    const resultsBox = document.getElementById("search-results");
+
+    const posts = Array.from(document.querySelectorAll("a[href$='.html']"))
+      .filter(a => !a.href.includes("about") && !a.href.includes("index"))
+      .map(link => {
+        return {
+          title: link.textContent.trim(),
+          href: link.href
+        };
+      });
+
+    function renderResults(filtered) {
+      if (filtered.length === 0) {
+        resultsBox.innerHTML = '<div class="search-no-results">검색 결과가 없습니다.</div>';
+      } else {
+        resultsBox.innerHTML = filtered.map(post => `
+          <div class="search-result-item" onclick="location.href='${post.href}'">
+            <div class="search-result-title">${post.title}</div>
+          </div>`).join('');
+      }
+      resultsBox.classList.add("active");
+    }
+
+    function handleSearch(query) {
+      const filtered = posts.filter(post =>
+        post.title.toLowerCase().includes(query.toLowerCase())
+      );
+      renderResults(filtered);
+    }
+
+    input.addEventListener("input", () => handleSearch(input.value));
+    button.addEventListener("click", () => handleSearch(input.value));
+  }
+})();
+</script>
+
+
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {
@@ -539,19 +679,6 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>© 2025 여암 Blog</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-<p><a href="https://github.com/yeoamlog">GitHub</a></p>
-</div>
-  </div>
-</footer>
 
 
 
