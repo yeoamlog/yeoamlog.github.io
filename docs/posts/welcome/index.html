@@ -198,8 +198,7 @@ ul.task-list li input[type="checkbox"] {
             
             // 메인 페이지가 아니면 return
             const isMainPage = window.location.pathname === '/' || 
-                              window.location.pathname === '/index.html' ||
-                              window.location.pathname.endsWith('/');
+                              window.location.pathname === '/index.html';
             
             if (!isMainPage) {
                 console.log('❌ Not main page, skipping search');
