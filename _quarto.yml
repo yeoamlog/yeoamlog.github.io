@@ -2,6 +2,9 @@ project:
   type: website
   output-dir: docs
 
+execute:
+  freeze: auto
+
 website:
   title: "나날의 여암(與巖)"
   navbar:
@@ -22,6 +25,7 @@ format:
       - brand
     css: styles.css
     include-after-body: dynamic-footer.html
+
 
 
 

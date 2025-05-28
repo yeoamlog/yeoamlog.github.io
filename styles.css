@@ -359,6 +359,7 @@ html {
   }
 }
 
+/* 폰트 스타일 추가 */
 @import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap");
 
@@ -369,3 +370,12 @@ html {
 }
 body       { font-family: var(--bs-font-serif); }
 pre, code  { font-family: var(--bs-font-monospace); }
+
+/* 포스트 제목과 카테고리 간의 간격 조절 */
+.listing-title {
+  margin-bottom: 0.7rem;
+}
+
+.listing-category {
+  margin-top: 0.5rem;
+}
