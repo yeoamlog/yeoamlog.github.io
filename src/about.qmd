@@ -1,0 +1,28 @@
+---
+title: "Junhyuck Kwon"
+image: profile_anim.jpeg
+about: 
+  template: jolla
+  links:
+    - icon: google
+      text: Gmail
+      href: mailto:jerrykbayes0814@gmail.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/junhyuck-kwon
+    - icon: github
+      text: Github
+      href: https://github.com/yeoamlog
+
+---
+
+<div style="text-align: left;">
+겉은 한옥인데, 속은 하이테크인 집을 꿈꾸고  <br>
+타이핑으로 기록하지만, 종이로 읽기를 선호하고  <br>
+심플하지만, 쫀득한 그런 문장들을 쫒으며  <br>
+다양한 사고 프레임으로 현상을 분석하기 좋아하는  <br>
+</div> 
+**데이터 분석가**입니다.
+
+<a href="index.html" class="fixed-home-btn"> Home</a>
+

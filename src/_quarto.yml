@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+execute:
+  freeze: auto
+
+website:
+  title: "나날의 여암(與巖)"
+  navbar:
+    right:
+      - text: About
+        href: about.html
+      - icon: github
+        href: https://github.com/yeoamlog
+      - icon: threads
+        href: https://threads.net/@yeoamlog
+  search: false
+  page-navigation: true
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    include-after-body: dynamic-footer.html
+
+
+
+

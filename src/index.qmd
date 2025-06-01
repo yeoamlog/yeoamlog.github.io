@@ -1,0 +1,15 @@
+---
+title: "기록일지"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  max-items: 50
+page-layout: full
+title-block-banner: true
+---
+
+

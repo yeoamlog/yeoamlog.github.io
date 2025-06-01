@@ -1,0 +1,16 @@
+# Quarto의 캐시 디렉토리
+.quarto/
+
+# Quarto의 기본 출력 디렉토리 (사용하지 않는 경우)
+_site/
+
+# 운영 체제 및 편집기의 임시 파일
+.DS_Store
+Thumbs.db
+
+/.quarto/
+
+/save
+/_freeze/
+
+
